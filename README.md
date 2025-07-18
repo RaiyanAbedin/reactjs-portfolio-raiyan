@@ -1,70 +1,153 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website showcasing my software engineering projects and skills. Built with React and Tailwind CSS, featuring a clean design and interactive user experience.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+[View Live Portfolio](https://raiyanabedin.com)
 
-### `npm start`
+## 📋 About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I'm Raiyan Abedin, a First-Class Graduate in Software Engineering from the University of the West of England. This portfolio showcases my journey in software development, highlighting projects ranging from AI-powered applications to web development and hardware programming.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- **Frontend**: React.js, JavaScript, HTML5, CSS3
+- **Styling**: Tailwind CSS, Framer Motion
+- **Build Tool**: Create React App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Featured Projects
 
-### `npm run build`
+### 1. NuroFit - AI-Powered Fitness and Nutrition App
+- **Grade**: First-Class Dissertation (71%)
+- **Tech Stack**: React, Python Flask, MongoDB, OpenAI API, Tailwind CSS, ReCharts
+- **Features**: Personalized workouts, meal planning, progress tracking, AI-powered recommendations
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Phishing Scanner
+- **Tech Stack**: Python, Flask, Tailwind CSS, Hunter.IO API, VirusTotal API
+- **Features**: Email and URL threat detection, detailed security reports, multi-source verification
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Travel Website
+- **Tech Stack**: Python Flask, HTML, Bootstrap, JavaScript
+- **Features**: Destination search, travel guides, booking system, secure authentication
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 4. Twin City Explorer
+- **Tech Stack**: PHP, JavaScript, Google Maps API, OpenWeather API, Flickr API
+- **Features**: Interactive city exploration, real-time weather, POI discovery
 
-### `npm run eject`
+### 5. Arduino Ultrasonic Sensor System
+- **Tech Stack**: Arduino (C), LCD Display, Ultrasonic Sensor
+- **Features**: Real-time distance measurement, visual feedback, audio alerts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎓 Education
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**BSc Software Engineering for Business** - First Class Honours  
+*University of the West of England*
+- 2nd Year Average: 74%
+- 3rd Year Average: 72%
+- Dissertation Grade: 71%
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Key Modules:**
+- Object Oriented Systems Development
+- Data Structures and Algorithms
+- Advanced Databases
+- IT Practice: Consultancy Project
+- Data, Schemas, and Applications
+- Software Development Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 💻 Technical Skills
 
-## Learn More
+- **Languages**: Python, JavaScript, TypeScript, C, PHP, HTML, CSS
+- **Frameworks**: React.js, React Native, Flask, Bootstrap
+- **Databases**: MongoDB, PostgreSQL
+- **Tools**: Git, APIs (OpenAI, Google Maps, etc.), Tailwind CSS
+- **Specialties**: Mobile App Development, Web Development, AI Integration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+reactjs-portfolio-raiyan/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── HeroSection.js
+│   │   └── Background.js
+│   ├── assets/
+│   │   └── images/
+│   ├── styles.css
+│   └── App.js
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+## 🚀 Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-### Analyzing the Bundle Size
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repository
+```bash
+git clone https://github.com/RaiyanAbedin/reactjs-portfolio-raiyan.git
+cd reactjs-portfolio-raiyan
+```
 
-### Making a Progressive Web App
+2. Install dependencies
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Start the development server
+```bash
+npm start
+```
 
-### Advanced Configuration
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Build for Production
 
-### Deployment
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📱 Features
 
-### `npm run build` fails to minify
+- **Responsive Design**: Optimized for all device sizes
+- **Modern UI**: Clean, professional design with smooth animations
+- **Interactive Elements**: Hover effects and dynamic content
+- **Fast Loading**: Optimized images and efficient code structure
+- **SEO Friendly**: Proper meta tags and semantic HTML
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔧 Customization
+
+The portfolio is built with modularity in mind. Key areas for customization:
+
+- **Projects**: Update project data in `App.js`
+- **Styling**: Modify colors and layout in `styles.css`
+- **Content**: Update personal information and descriptions
+- **Images**: Replace project images in `src/assets/images/`
+
+## 📞 Contact
+
+- **Email**: raiyanabedinn@gmail.com
+- **LinkedIn**: [@RaiyanAbedin](https://linkedin.com/in/RaiyanAbedin)
+- **GitHub**: [@RaiyanAbedin](https://github.com/RaiyanAbedin)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- University of the West of England for the excellent education
+- Various open-source libraries and frameworks used in this project
+- Inspiration from my close friends: Moiz Saleem, Syed Zaheer and Abdul Noor!
+
+---
+
+⭐ **If you like this project, please give it a star!** ⭐
