@@ -50,7 +50,7 @@ const Header = () => {
         <a href="#home" className="nav-item text-lg font-bold">Home</a>
         <a href="#about" className="nav-item text-lg font-bold">About Me</a>
         <a href="#projects" className="nav-item text-lg font-bold">Projects</a>
-        <a href="#technologies-education" className="nav-item text-lg font-bold">Tech'n'Ed</a>
+        <a href="#technologies-education" className="nav-item text-lg font-bold">Education</a>
         <a href="#contact" className="nav-item text-lg font-bold">Contact</a>
       </nav>
 
@@ -60,7 +60,7 @@ const Header = () => {
           <a href="#home" className="block nav-item text-lg font-bold text-white mb-4" onClick={toggleMenu}>Home</a>
           <a href="#about" className="block nav-item text-lg font-bold text-white mb-4" onClick={toggleMenu}>About Me</a>
           <a href="#projects" className="block nav-item text-lg font-bold text-white mb-4" onClick={toggleMenu}>Projects</a>
-          <a href="#technologies-education" className="block nav-item text-lg font-bold text-white mb-4" onClick={toggleMenu}>Tech'n'Ed</a>
+          <a href="#technologies-education" className="block nav-item text-lg font-bold text-white mb-4" onClick={toggleMenu}>Education</a>
           <a href="#contact" className="block nav-item text-lg font-bold text-white mb-4" onClick={toggleMenu}>Contact</a>
         </nav>
       )}

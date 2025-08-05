@@ -64,12 +64,7 @@ html {
 
 
 /* for the font */
-@font-face {
-    font-family: 'YourCustomFont';
-    src: url('') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
-  }
+
   
 /* Project Section Title */
 #projects h2 {
