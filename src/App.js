@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from './components/HeroSection';
 import Header from './components/Header'; // eslint-disable-next-line
 import Background from './components/Background';
+import AboutMe from './components/AboutMe';
 //import Section from './components/Section';
 import profilePicture from './assets/images/ash-edmonds-Koxa-GX_5zs-unsplash.jpg';
 
@@ -30,25 +31,7 @@ const App = () => {
         <HeroSection />
       </div>
       <main>
-      <section id="about" className="about-section py-8 mt-8 bg-white rounded-lg p-8 w-full">
-  <div className="text-center">
-    <div className="flex flex-col md:flex-row items-center justify-center">
-      <img src={profilePicture} alt="Raiyan Abedin" className="w-32 h-32 md:w-80 md:h-80 rounded-lg mb-4 md:mb-0 md:mr-8" />
-      <div className="text-lg mt-4">
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
-        <p className="text-center mb-4">
-          Hi, I'm <span className="font-bold text-secondary">Raiyan Abedin</span>, a <span className="font-bold text-secondary">First-Class Graduate</span> of <span className="font-bold text-secondary">Software Engineering</span> from <span className="font-bold text-secondary">The University of The West of England</span>. I have built experience in software consultancy projects from mobile and web development.
-        </p>
-        <p className="text-center mb-4">
-          My portfolio includes developing an <span className="font-bold text-secondary">AI-powered fitness and nutrition app</span>, building a <span className="font-bold text-secondary">phishing detection tool</span> in collaboration with <span className="font-bold text-secondary">UWE IT Services</span>, and leading the creation of an educational website for the <span className="font-bold text-secondary">Community Engaged Learning Network</span> alongside university stakeholders.
-        </p>
-        <p className="text-center">
-          I'm passionate about solving real-world problems through technology, from initial concept to final product. I enjoy turning ideas into practical, impactful solutions that meet real user needs.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      <AboutMe />
 
 
         <div className="w-full custom-project-bg text-white py-8">
