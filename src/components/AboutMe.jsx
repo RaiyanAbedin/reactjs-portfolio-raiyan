@@ -32,10 +32,10 @@ const AboutMe = () => {
   return (
     <section 
       id="about" 
-      className="about-me-section custom-project-bg py-24 sm:py-20 md:py-24 lg:py-28"
+      className="about-me-section custom-project-bg py-24 sm:py-20 md:py-24 lg:py-28 overflow-x-hidden w-full"
       ref={sectionRef}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Section Title */}
         <div className="text-center mb-12 sm:mb-16 fade-in-element">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-3">
@@ -100,11 +100,22 @@ const AboutMe = () => {
       </div>
 
       <style>{`
+        /* Prevent overflow in about section */
+        .about-me-section {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+
+        .about-me-section * {
+          max-width: 100%;
+        }
+
         /* Quick Facts Grid - Responsive */
         .quick-facts-grid {
           display: grid;
           grid-template-columns: 1fr; /* Mobile: Stack vertically */
           gap: 1rem;
+          width: 100%;
         }
 
         /* Desktop: 4 cards in one row */

@@ -26,16 +26,16 @@ import './styles.css';
 const App = () => {
   return (
     <>
-      <div className="custom-hero-bg">
+      <div className="custom-hero-bg overflow-x-hidden w-full max-w-full">
         <Header />
         <HeroSection />
       </div>
-      <main>
+      <main className="overflow-x-hidden w-full max-w-full">
       <AboutMe />
 
 
-        <div className="w-full custom-project-bg text-white py-8">
-          <section id="projects" className="py-8 mt-8 w-full">
+        <div className="w-full max-w-full custom-project-bg text-white py-8 overflow-x-hidden">
+          <section id="projects" className="py-8 mt-8 w-full max-w-full overflow-x-hidden">
             <div className="text-center">
               <h2 className="text-4xl font-extrabold mb-4"> My Projects</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">
@@ -171,7 +171,7 @@ const App = () => {
             </div>
           </section>
 
-          <section id="technologies-education" className="py-16 w-full">
+          <section id="technologies-education" className="py-16 w-full max-w-full overflow-x-hidden">
   <div className="text-center mb-12">
     <h2 className="text-4xl font-bold mb-4 text-white">Technologies & Education</h2>
   </div>
@@ -244,7 +244,7 @@ const App = () => {
   </div>
 </section>
 
-<section id="contact" className="py-16">
+<section id="contact" className="py-16 w-full max-w-full overflow-x-hidden">
   <div className="contact-form">
     <h2 className="text-3xl font-bold mb-4 text-center">Contact Me</h2>
     <p className="text-lg text-center mb-6">Feel free to send me an email! Or message me on LinkedIn.</p>
@@ -261,7 +261,7 @@ const App = () => {
 
         </div>
       </main>
-      <footer className="w-full py-8 text-center text-white custom-project-bg">
+      <footer className="w-full max-w-full py-8 text-center text-white custom-project-bg overflow-x-hidden">
         <p>Thanks for stopping by!</p>
         <p>&copy; 2024 Raiyan Abedin | Raiyanabedin.com</p>
       </footer>

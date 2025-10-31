@@ -4,29 +4,50 @@
 
 
 
-/* Prevent horizontal overflow globally - so the annoying horizontal swipe to empty space is gone */
+/* Prevent horizontal overflow globally */
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
 
-/* Specific sections or containers that may overflow */
-/*.custom-hero-bg, .section-container, .main-container {
-  overflow-x: hidden; /* Ensure each section does not allow overflow */
-/*} -- ^^^^^^ THIS IS COMMENTED OUT AS THE HORIZONTAL SWIPE IS GONE AND NAVBAR STICKS WHEN THIS IS REMOVED .
-
-/* Ensure the body or any large container doesn't exceed the viewport width */
 body {
   margin: 0;
   padding: 0;
-  width: 100vw; /* Ensure it does not extend beyond the viewport width */
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
-.hero-section, .section-container {
-  max-width: 100%; /* Prevent sections from exceeding 100% of the viewport, helped in fixing horizontal scrolling */
+/* Ensure all elements inherit box-sizing */
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
+/* Prevent any element from exceeding viewport */
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
 
-html {
-    scroll-behavior: smooth;
-  }
+/* Prevent sections from exceeding viewport */
+.hero-section, .section-container, .custom-hero-bg, .custom-project-bg {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent grid and flex containers from overflowing */
+.grid, [class*="grid-cols"] {
+  max-width: 100%;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
     
 
 /* for the raiyan abedin logo on top left - (currently moved on, will come back and fix soon?) */
