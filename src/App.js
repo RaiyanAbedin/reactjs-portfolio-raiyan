@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import Header from './components/Header'; // eslint-disable-next-line
 import Background from './components/Background';
 import AboutMe from './components/AboutMe';
+import Experience from './components/Experience';
 //import Section from './components/Section';
 import profilePicture from './assets/images/ash-edmonds-Koxa-GX_5zs-unsplash.jpg';
 
@@ -32,7 +33,7 @@ const App = () => {
       </div>
       <main className="overflow-x-hidden w-full max-w-full">
       <AboutMe />
-
+      <Experience />
 
         <div className="w-full max-w-full custom-project-bg text-white py-8 overflow-x-hidden">
           <section id="projects" className="py-8 mt-8 w-full max-w-full overflow-x-hidden">
