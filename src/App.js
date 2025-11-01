@@ -4,6 +4,7 @@ import Header from './components/Header'; // eslint-disable-next-line
 import Background from './components/Background';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 //import Section from './components/Section';
 import profilePicture from './assets/images/ash-edmonds-Koxa-GX_5zs-unsplash.jpg';
 
@@ -17,7 +18,11 @@ import project4Image from './assets/images/cityexplorer-thumb.jpg';
 import project5Image from './assets/images/Mockup4portfolioitself.jpg';
 import project6Image from './assets/images/arduinomockup1.jpg';
 
-import projectAImage from './assets/images/Screenshot 2025-06-29 at 4.19.18 pm.jpg'; 
+import projectAImage from './assets/images/NuroAnalytics.jpg'; 
+import NuroFitLanding from './assets/images/NF-PIC.jpg'
+import WatchEmail from './assets/images/WatchEmail.png';
+import GlowSearch from './assets/images/GlowSearch.jpeg';
+import GlowCDash from './assets/images/GlowCDash.jpeg';
 
 
 
@@ -34,9 +39,10 @@ const App = () => {
       <main className="overflow-x-hidden w-full max-w-full">
       <AboutMe />
       <Experience />
+      <Projects />
 
-        <div className="w-full max-w-full custom-project-bg text-white py-8 overflow-x-hidden">
-          <section id="projects" className="py-8 mt-8 w-full max-w-full overflow-x-hidden">
+        <div className="w-full max-w-full custom-project-bg text-white py-8 overflow-x-hidden" style={{ display: 'none' }}>
+          <section id="old-projects-hidden" className="py-8 mt-8 w-full max-w-full overflow-x-hidden">
             <div className="text-center">
               <h2 className="text-4xl font-extrabold mb-4"> My Projects</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">

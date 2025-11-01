@@ -66,9 +66,8 @@ const Experience = () => {
       logo: 'UWE',
       responsibilities: [
         'Project Lead for a  UWE ITs program to develop a phsihing detection tool to help students prevent phishing attacks from emails and URls',
-        'Implemented RESTful API integration for real-time email and URL validation. Made use of multiple cyber-intelligence APIs for comprehensive threat analysis.',
-        'Created detailed reporting system with threat and reputation scores, achieving a 92% accuracy rate.',
-        'Demonstrated Full-Stack development using MVC architecture using Python, HTML, TailWindCSS and Flask Routing"'
+        'Communicated with UWE ITS stakeholders through weekly sprints, presenting progress updates through live demos, gathering feedback and aligning technical goals with the client requirements.',
+        'Wrote documentation covering system testing, use-case scenarios and future maintanbility with improvements for the future of the project.'
       ],
       techStack: ['Python', 'Flask', 'HTML', 'Tailwind CSS', 'APIs']
     }
@@ -110,11 +109,6 @@ const Experience = () => {
 
                 {/* Card */}
                 <div className="experience-card">
-                  {/* Company Logo */}
-                  <div className="company-logo">
-                    <span className="logo-text">{exp.logo}</span>
-                  </div>
-
                   {/* Header */}
                   <div className="mb-4">
                     <div className="flex items-center gap-2 mb-2">
@@ -138,8 +132,8 @@ const Experience = () => {
                     ))}
                   </ul>
 
-                  {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-2">
+                  {/* Tech Stack - Commented out */}
+                  {/* <div className="flex flex-wrap gap-2">
                     {exp.techStack.map((tech, idx) => (
                       <span 
                         key={idx}
@@ -148,7 +142,7 @@ const Experience = () => {
                         {tech}
                       </span>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}
@@ -273,30 +267,6 @@ const Experience = () => {
           background: rgba(255, 255, 255, 0.08);
         }
 
-        /* Company logo */
-        .company-logo {
-          position: absolute;
-          top: -20px;
-          right: 2rem;
-          width: 60px;
-          height: 60px;
-          background: linear-gradient(135deg, #1a0b2e 0%, #3A0B5C 50%, #56127E 100%);
-          border: 2px solid rgba(255, 0, 255, 0.5);
-          border-radius: 12px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
-        }
-
-        .logo-text {
-          font-size: 1.25rem;
-          font-weight: bold;
-          background: linear-gradient(135deg, #FF00FF, #8728D8);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
 
         /* Tech badges */
         .tech-badge {
@@ -320,17 +290,6 @@ const Experience = () => {
         @media (max-width: 1023px) {
           .experience-card {
             max-width: 100%;
-          }
-
-          .company-logo {
-            width: 50px;
-            height: 50px;
-            top: -15px;
-            right: 1rem;
-          }
-
-          .logo-text {
-            font-size: 1rem;
           }
         }
 
