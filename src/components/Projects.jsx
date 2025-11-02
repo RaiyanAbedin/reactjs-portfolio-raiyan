@@ -33,7 +33,7 @@ const Projects = () => {
        id: 1,
        label: 'Featured Project',
        title: 'GlowCrew: A Mobile Marketplace',
-       description: 'A Cross-Platform Mobile Marketplace connecting users with local event service providers. Built using React Native and TypeScript. Handles booking, image uploads and geolocation filtering with Supabase (PostgreSQL). Includes real-time messaging through Supabase Real-Time and Expo Push Notifications for booking and messaging alerts. Designed to replace finding services through word-of-mouth and social media, allowing users to find and book services based on their location and needs whilst allowing vendors to list their services, upload images and manage bookings.',
+       description: 'A Cross-Platform Mobile Marketplace connecting users with local event service providers. Built using React Native and TypeScript. Handles booking, image uploads and geolocation filtering with Supabase (PostgreSQL). Includes real-time messaging through Supabase Real-Time, Expo Push Notifications for booking and messaging alerts and secure payment processing through Stripe API. Designed to replace finding services through word-of-mouth and social media, allowing users to find and book services based on their location and needs whilst allowing vendors to list their services, upload images and manage bookings.',
        images: [GlowSearch, GlowCDash],
        imageFit: 'contain', // Show full mobile screenshot
        techStack: ['React Native', 'TypeScript', 'Supabase', 'Mobile Development', 'PostgreSQL'],
