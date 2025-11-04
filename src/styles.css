@@ -111,7 +111,7 @@ img {
 
 /* the background gradient animation */
 .custom-hero-bg {
-    background: linear-gradient(135deg, #0B0312, #2a0644, #56127E, #0B0312);
+    background: linear-gradient(135deg, #0B0312, #3A0B5C, #0B0312, #56127E);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
   }

@@ -293,6 +293,17 @@ const Experience = () => {
           }
         }
 
+        /* Hide timeline dots on mobile */
+        @media (max-width: 767px) {
+          .timeline-dot {
+            display: none;
+          }
+          
+          .timeline-line {
+            display: none;
+          }
+        }
+
         /* Performance optimization */
         .experience-card {
           will-change: transform;

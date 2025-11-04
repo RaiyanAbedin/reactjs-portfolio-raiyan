@@ -270,7 +270,7 @@ const App = () => {
 
         </div>
       </main>
-      <footer className="w-full max-w-full py-8 pt-12 text-center text-white custom-project-bg overflow-x-hidden" style={{ marginTop: 0 }}>
+      <footer className="w-full max-w-full py-8 pt-12 text-center text-white overflow-x-hidden" style={{ marginTop: 0, background: '#0B0312' }}>
         <p className="text-lg mb-2">Thanks for stopping by!</p>
         <p className="text-sm text-gray-400">&copy; 2024 Raiyan Abedin | Raiyanabedin.com</p>
       </footer>

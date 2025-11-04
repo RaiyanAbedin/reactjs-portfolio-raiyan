@@ -356,6 +356,37 @@ const Projects = () => {
           .featured-button {
             justify-content: center;
           }
+
+          /* Fix image overflow on mobile */
+          .featured-image-container {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+            padding: 0;
+          }
+
+          .featured-image {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+          }
+
+          .multiple-images {
+            flex-direction: column;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            min-height: auto;
+          }
+
+          .featured-image-multiple {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+          }
         }
       `}</style>
     </section>
