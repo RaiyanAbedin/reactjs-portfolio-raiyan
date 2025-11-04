@@ -1,14 +1,10 @@
 import React from 'react';
 import HeroSection from './components/HeroSection';
 // import Header from './components/Header'; // eslint-disable-next-line // Navbar removed
-import Background from './components/Background';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 //import Section from './components/Section';
-import profilePicture from './assets/images/ash-edmonds-Koxa-GX_5zs-unsplash.jpg';
-
-
 
 // for project images
 import project1Image from './assets/images/horizontravels4portfolio.jpg';
@@ -18,11 +14,7 @@ import project4Image from './assets/images/cityexplorer-thumb.jpg';
 import project5Image from './assets/images/Mockup4portfolioitself.jpg';
 import project6Image from './assets/images/arduinomockup1.jpg';
 
-import projectAImage from './assets/images/NuroAnalytics.jpg'; 
-import NuroFitLanding from './assets/images/NF-PIC.jpg'
-import WatchEmail from './assets/images/WatchEmail.png';
-import GlowSearch from './assets/images/GlowSearch.jpeg';
-import GlowCDash from './assets/images/GlowCDash.jpeg';
+import projectAImage from './assets/images/NuroAnalytics.jpg';
 
 
 
