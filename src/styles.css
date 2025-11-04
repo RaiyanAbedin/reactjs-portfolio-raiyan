@@ -4,29 +4,50 @@
 
 
 
-/* Prevent horizontal overflow globally - so the annoying horizontal swipe to empty space is gone */
+/* Prevent horizontal overflow globally */
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
 
-/* Specific sections or containers that may overflow */
-/*.custom-hero-bg, .section-container, .main-container {
-  overflow-x: hidden; /* Ensure each section does not allow overflow */
-/*} -- ^^^^^^ THIS IS COMMENTED OUT AS THE HORIZONTAL SWIPE IS GONE AND NAVBAR STICKS WHEN THIS IS REMOVED .
-
-/* Ensure the body or any large container doesn't exceed the viewport width */
 body {
   margin: 0;
   padding: 0;
-  width: 100vw; /* Ensure it does not extend beyond the viewport width */
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
-.hero-section, .section-container {
-  max-width: 100%; /* Prevent sections from exceeding 100% of the viewport, helped in fixing horizontal scrolling */
+/* Ensure all elements inherit box-sizing */
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
+/* Prevent any element from exceeding viewport */
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
 
-html {
-    scroll-behavior: smooth;
-  }
+/* Prevent sections from exceeding viewport */
+.hero-section, .section-container, .custom-hero-bg, .custom-project-bg {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent grid and flex containers from overflowing */
+.grid, [class*="grid-cols"] {
+  max-width: 100%;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
     
 
 /* for the raiyan abedin logo on top left - (currently moved on, will come back and fix soon?) */
@@ -199,8 +220,8 @@ html {
 
 /* Background for the entire section - PROJECT SECTION - Dark Purple Theme */
 .custom-project-bg {
-    background: linear-gradient(to right, #0B0312, #3A0B5C, #0B0312);
-    padding: 2rem 0;
+    background: linear-gradient(180deg, #0B0312 0%, #2d1b4e 25%, #3A0B5C 50%, #2d1b4e 75%, #0B0312 100%);
+    padding: 0;
 }
 
 
@@ -213,12 +234,13 @@ html {
 
 /* Base Navbar Styles */
 .navbar {
-    position: sticky; /* Makes the navbar stick to the top when scrolling - problem: it only sticks until "about me" , i havent fixed it yet. */
+    position: sticky; /* Makes the navbar stick to the top when scrolling */
     top: 0; /* Ensures it stays at the top */
     z-index: 1000; /* Ensures it stays on top of other content */
     background-color: rgba(0, 0, 0, 0); /* Make it transparent */
     transition: background-color 0.3s ease; /* Smooth transition for background color */
     padding: 10px 0; /* Padding for the navbar */
+    margin: 0; /* Remove any margins */
     display: flex;
     justify-content: space-between; /* Align items to the left and right */
     align-items: center;
@@ -276,13 +298,15 @@ html {
 
 /* Contact Form Container */
 .contact-form {
-    background: linear-gradient(135deg, #3A0B5C, #56127E, #6D28D9);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(135, 40, 216, 0.3);
     border-radius: 15px;
     padding: 2rem;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
-    margin: 0 auto; /* Center horizontally */
-    max-width: 700px; /* Limit max width */
-    color: #fff; /* Text color */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 3rem auto; /* Center horizontally with bottom margin */
+    max-width: 700px;
+    color: #fff;
 }
 
 /* Contact Input Styles */

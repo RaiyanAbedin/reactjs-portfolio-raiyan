@@ -1,7 +1,10 @@
 import React from 'react';
 import HeroSection from './components/HeroSection';
-import Header from './components/Header'; // eslint-disable-next-line
+// import Header from './components/Header'; // eslint-disable-next-line // Navbar removed
 import Background from './components/Background';
+import AboutMe from './components/AboutMe';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 //import Section from './components/Section';
 import profilePicture from './assets/images/ash-edmonds-Koxa-GX_5zs-unsplash.jpg';
 
@@ -15,7 +18,11 @@ import project4Image from './assets/images/cityexplorer-thumb.jpg';
 import project5Image from './assets/images/Mockup4portfolioitself.jpg';
 import project6Image from './assets/images/arduinomockup1.jpg';
 
-import projectAImage from './assets/images/Screenshot 2025-06-29 at 4.19.18 pm.jpg'; 
+import projectAImage from './assets/images/NuroAnalytics.jpg'; 
+import NuroFitLanding from './assets/images/NF-PIC.jpg'
+import WatchEmail from './assets/images/WatchEmail.png';
+import GlowSearch from './assets/images/GlowSearch.jpeg';
+import GlowCDash from './assets/images/GlowCDash.jpeg';
 
 
 
@@ -25,34 +32,19 @@ import './styles.css';
 const App = () => {
   return (
     <>
-      <div className="custom-hero-bg">
-        <Header />
-        <HeroSection />
+      <div className="overflow-x-hidden w-full max-w-full">
+        <div className="custom-hero-bg">
+          {/* <Header /> */} 
+          <HeroSection />
+        </div>
       </div>
-      <main>
-      <section id="about" className="about-section py-8 mt-8 bg-white rounded-lg p-8 w-full">
-  <div className="text-center">
-    <div className="flex flex-col md:flex-row items-center justify-center">
-      <img src={profilePicture} alt="Raiyan Abedin" className="w-32 h-32 md:w-80 md:h-80 rounded-lg mb-4 md:mb-0 md:mr-8" />
-      <div className="text-lg mt-4">
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
-        <p className="text-center mb-4">
-          Hi, I'm <span className="font-bold text-secondary">Raiyan Abedin</span>, a <span className="font-bold text-secondary">First-Class Graduate</span> of <span className="font-bold text-secondary">Software Engineering</span> from <span className="font-bold text-secondary">The University of The West of England</span>. I have built experience in software consultancy projects from mobile and web development.
-        </p>
-        <p className="text-center mb-4">
-          My portfolio includes developing an <span className="font-bold text-secondary">AI-powered fitness and nutrition app</span>, building a <span className="font-bold text-secondary">phishing detection tool</span> in collaboration with <span className="font-bold text-secondary">UWE IT Services</span>, and leading the creation of an educational website for the <span className="font-bold text-secondary">Community Engaged Learning Network</span> alongside university stakeholders.
-        </p>
-        <p className="text-center">
-          I'm passionate about solving real-world problems through technology, from initial concept to final product. I enjoy turning ideas into practical, impactful solutions that meet real user needs.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      <main className="overflow-x-hidden w-full max-w-full">
+      <AboutMe />
+      <Experience />
+      <Projects />
 
-
-        <div className="w-full custom-project-bg text-white py-8">
-          <section id="projects" className="py-8 mt-8 w-full">
+        <div className="w-full max-w-full custom-project-bg text-white py-8 overflow-x-hidden" style={{ display: 'none' }}>
+          <section id="old-projects-hidden" className="py-8 mt-8 w-full max-w-full overflow-x-hidden">
             <div className="text-center">
               <h2 className="text-4xl font-extrabold mb-4"> My Projects</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">
@@ -188,7 +180,7 @@ const App = () => {
             </div>
           </section>
 
-          <section id="technologies-education" className="py-16 w-full">
+          <section id="technologies-education" className="py-16 w-full max-w-full overflow-x-hidden">
   <div className="text-center mb-12">
     <h2 className="text-4xl font-bold mb-4 text-white">Technologies & Education</h2>
   </div>
@@ -261,7 +253,7 @@ const App = () => {
   </div>
 </section>
 
-<section id="contact" className="py-16">
+<section id="contact" className="py-16 pb-0 w-full max-w-full overflow-x-hidden custom-project-bg">
   <div className="contact-form">
     <h2 className="text-3xl font-bold mb-4 text-center">Contact Me</h2>
     <p className="text-lg text-center mb-6">Feel free to send me an email! Or message me on LinkedIn.</p>
@@ -278,9 +270,9 @@ const App = () => {
 
         </div>
       </main>
-      <footer className="w-full py-8 text-center text-white custom-project-bg">
-        <p>Thanks for stopping by!</p>
-        <p>&copy; 2024 Raiyan Abedin | Raiyanabedin.com</p>
+      <footer className="w-full max-w-full py-8 pt-12 text-center text-white overflow-x-hidden" style={{ marginTop: 0, background: '#0B0312' }}>
+        <p className="text-lg mb-2">Thanks for stopping by!</p>
+        <p className="text-sm text-gray-400">&copy; 2024 Raiyan Abedin | Raiyanabedin.com</p>
       </footer>
     </>
   );

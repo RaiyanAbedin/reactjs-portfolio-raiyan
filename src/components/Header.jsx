@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`navbar ${scrolled ? 'scrolled' : ''} py-4 flex justify-between items-center sticky top-0 bg-purple-900 z-50`}>
+    <header className={`navbar ${scrolled ? 'scrolled' : ''} py-4 flex justify-between items-center sticky top-0 z-50`}>
       <div className="text-2xl font-bold text-white ml-8 gradient-text">
         
       </div>
