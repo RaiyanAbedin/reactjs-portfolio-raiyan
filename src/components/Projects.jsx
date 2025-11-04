@@ -1,6 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { ExternalLink, Github } from 'lucide-react';
-import nuroFitImage from '../assets/images/NuroAnalytics.jpg';
 import NuroFitLanding from '../assets/images/NF-PIC.jpg';
 import WatchEmail from '../assets/images/WatchEmail.png';
 import GlowSearch from '../assets/images/GlowSearch.jpeg';
