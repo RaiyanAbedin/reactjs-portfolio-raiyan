@@ -32,7 +32,7 @@ const AboutMe = () => {
   return (
     <section 
       id="about" 
-      className="about-me-section custom-project-bg py-24 sm:py-20 md:py-24 lg:py-28 overflow-x-hidden w-full"
+      className="about-me-section custom-project-bg pt-16 pb-24 sm:pt-16 sm:pb-20 md:pt-16 md:pb-24 lg:pt-16 lg:pb-28 overflow-x-hidden w-full"
       ref={sectionRef}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -56,24 +56,22 @@ const AboutMe = () => {
           </div>
 
           {/* Right Column - Content */}
-          <div className="space-y-8 fade-in-element text-center">
+          <div className="fade-in-element text-center">
             {/* Bio Text */}
-            <div className="bio-content space-y-4">
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-semibold text-center">
-                Hi, I'm <span className="text-pink-500 font-semibold">Raiyan Abedin</span>, 
-                a passionate Software Engineer with a <span className="text-pink-500 font-semibold">First-Class</span> in BSc Software Engineering 
-                from the University of the West of England.
+            <div className="bio-content max-w-[250px] mx-auto">
+              <p className="text-gray-300 font-semibold text-center mb-6" style={{ fontSize: '0.9rem', lineHeight: '1.6' }}>
+                Hi, I'm <span className="text-pink-500 font-semibold">Raiyan Abedin</span>, a Software Engineer with a <span className="text-pink-500 font-semibold">First-Class</span> BSc in Software Engineering from the University of the West of England. I focus on full-stack development for web and mobile, backend systems, and working with early-stage teams to turn ideas into scalable, well-engineered products..
               </p>
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-semibold text-center">
-              I build software with purpose, solving real-world problems through thoughtful design and clean engineering. From building GlowCrew, a mobile marketplace connecting users with local vendors, to developing NuroFit, a full-stack AI fitness app designed to help students start their fitness journey. I've learned that the best software doesn't just work well, it solves problems people actually care about.
+              <p className="text-gray-300 font-semibold text-center mb-6" style={{ fontSize: '0.9rem', lineHeight: '1.6' }}>
+              I build software with purpose, solving real-world challenges through thoughtful design and clean engineering. From building GlowCrew, a mobile marketplace connecting users with local vendors, to developing NuroFit, an AI-powered fitness app helping students start their fitness journey, I've learned that the best software doesn't just work, it solves problems people care about.
               </p>
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-semibold text-center">
-              I'm drawn to teams where I can take ownership of features end-to-end and deepen my understanding of system design and scalable architectures. I'm focused on becoming a reliable engineer who doesn't just implement features, but understands the use cases behind them, anticipates edge cases, and writes code that's maintainable and built to last.
+              <p className="text-gray-300 font-semibold text-center mb-8" style={{ fontSize: '0.9rem', lineHeight: '1.6' }}>
+              I'm drawn to startup environments where I can take ownership of features end to end, move fast, and contribute to meaningful products. My goal is to become a reliable engineer who understands the use cases behind what I build, anticipates edge cases, and writes code that lasts.
               </p>
             </div>
 
             {/* Quick Facts Grid */}
-            <div className="quick-facts-grid gap-4 mt-8">
+            <div className="quick-facts-grid gap-4 max-w-[600px] mx-auto">
               {quickFacts.map((fact, index) => {
                 const IconComponent = fact.icon;
                 return (
@@ -133,6 +131,10 @@ const AboutMe = () => {
         }
 
         /* Bio content styling */
+        .bio-content {
+          padding: 0 1rem;
+        }
+        
         .bio-content p {
           font-weight: 600;
           text-align: center;

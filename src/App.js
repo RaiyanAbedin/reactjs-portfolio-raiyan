@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from './components/HeroSection';
-import Header from './components/Header'; // eslint-disable-next-line
+// import Header from './components/Header'; // eslint-disable-next-line // Navbar removed
 import Background from './components/Background';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
@@ -32,9 +32,11 @@ import './styles.css';
 const App = () => {
   return (
     <>
-      <div className="custom-hero-bg overflow-x-hidden w-full max-w-full">
-        <Header />
-        <HeroSection />
+      <div className="overflow-x-hidden w-full max-w-full">
+        <div className="custom-hero-bg">
+          {/* <Header /> */} 
+          <HeroSection />
+        </div>
       </div>
       <main className="overflow-x-hidden w-full max-w-full">
       <AboutMe />
@@ -251,7 +253,7 @@ const App = () => {
   </div>
 </section>
 
-<section id="contact" className="py-16 w-full max-w-full overflow-x-hidden">
+<section id="contact" className="py-16 pb-0 w-full max-w-full overflow-x-hidden custom-project-bg">
   <div className="contact-form">
     <h2 className="text-3xl font-bold mb-4 text-center">Contact Me</h2>
     <p className="text-lg text-center mb-6">Feel free to send me an email! Or message me on LinkedIn.</p>
@@ -268,9 +270,9 @@ const App = () => {
 
         </div>
       </main>
-      <footer className="w-full max-w-full py-8 text-center text-white custom-project-bg overflow-x-hidden">
-        <p>Thanks for stopping by!</p>
-        <p>&copy; 2024 Raiyan Abedin | Raiyanabedin.com</p>
+      <footer className="w-full max-w-full py-8 pt-12 text-center text-white custom-project-bg overflow-x-hidden" style={{ marginTop: 0 }}>
+        <p className="text-lg mb-2">Thanks for stopping by!</p>
+        <p className="text-sm text-gray-400">&copy; 2024 Raiyan Abedin | Raiyanabedin.com</p>
       </footer>
     </>
   );
